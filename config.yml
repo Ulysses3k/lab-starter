@@ -42,26 +42,57 @@ steps:
   description: Learn how to emphasize words in Markdown.
   event: issue_commented.created
   actions: # a list of the actions that will occur when the step is triggered by an event
-  - type: # the type of action, full list at https://lab.github.com/docs/actions
+  - type: gate
+    left: '%payload.pull_request.title%'
+    operator: ===
+    right: master
+    else: 
+      - type: respond
+        with: 01_nice-work.md
+  - type: respond
+    with: 01_nice-work.md
 
 # Step 3: EDIT HERE - INTERNAL COMMENT FOR STEP 3
 - title: Lists
   description: Learn how to create lists in Markdown.
   event: issue_commented.created
   actions: # a list of the actions that will occur when the step is triggered by an event
-  - type: # the type of action, full list at https://lab.github.com/docs/actions
+  - type: gate
+    left: '%payload.pull_request.title%'
+    operator: ===
+    right: master
+    else: 
+      - type: respond
+        with: 01_nice-work.md
+  - type: respond
+    with: 01_nice-work.md
 
 # Step 4: EDIT HERE - INTERNAL COMMENT FOR STEP 4
 - title: Images and Hyperilinks
   description: Learn how to insert images and hyperlinks in Markdown.
   event: issue_commented.created
   actions: # a list of the actions that will occur when the step is triggered by an event
-  - type: # the type of action, full list at https://lab.github.com/docs/actions
-
+  - type: gate
+    left: '%payload.pull_request.title%'
+    operator: ===
+    right: master
+    else: 
+      - type: respond
+        with: 01_nice-work.md
+  - type: respond
+    with: 01_nice-work.md
+    
 # Step 5: EDIT HERE - INTERNAL COMMENT FOR STEP 5
 - title: Tables
   description: Learn how to create tables in Markdown.
   event: issue_commented.created
   actions: # a list of the actions that will occur when the step is triggered by an event
-  - type: # the type of action, full list at https://lab.github.com/docs/actions
-
+  - type: gate
+    left: '%payload.pull_request.title%'
+    operator: ===
+    right: master
+    else: 
+      - type: respond
+        with: 01_nice-work.md
+  - type: respond
+    with: 01_nice-work.md
