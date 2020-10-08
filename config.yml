@@ -30,8 +30,13 @@ steps:
   - type: gate
     left: '%payload.pull_request.title%'
     operator: ===
-    right: Add name to README
-
+    right: master
+    else: 
+      - type: respond
+        with: 01_nice-work.md
+  - type: respond
+    with: 01_nice-work.md
+    
 # Step 2: EDIT HERE -INTERNAL COMMENT FOR STEP 2
 - title: Emphasis
   description: Learn how to emphasize words in Markdown.
