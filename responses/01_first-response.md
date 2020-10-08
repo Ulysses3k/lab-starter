@@ -1,20 +1,20 @@
-# Title
+# Writing Headers in Markdown
 
-This is the paragraph to would describe the concept. It may link to other resources, or include images. Try to avoid _too_ much information and _too_ many external links. The purpose of these paragraphs is to give the user the information they need to complete the activity, understand what they're doing, and understand why they're doing it.
+In Markdown, you can easily organise your text in different subsections using Headers.
 
-### More detail 
+### Number of levels
 
-If there are concepts that should be described separately, they might belong in a subparagraph section like this one.
+Markdown has six different Header levels available.
 
-## Step X: Description
+## Description
 
-Here, we'll describe generally what the user is about to do.
+Use **#** to mark the number of headers. The number of **#** used indicated the subheader level. 
 
-### :keyboard: Activity: Specific description
+### :keyboard: Activity: Steps
 
-1. Step 1 in short sentence
-2. Step 2 in short sentence
-3. Step 3 in short sentence
+1. Add a comment with a Level 1 Header using one **#** symbol.
+2. Add a comment with a Level 2 Header using one **##** symbol.
+3. Add a comment with a Level 4 Header using one **####** symbol.
 
 <hr>
 <h3 align="center">Watch below this comment for my response</h3>
